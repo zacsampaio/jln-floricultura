@@ -50,14 +50,13 @@ nav {
 nav a{
     padding: 1%;
     font-size: 20px;
-    color: white;
+    color: #ffffff;
     font-weight: 800;
 }
 
 nav a:hover{
     color: #92E3A9;
     background-color: #ffffff;
-    height: 100%;
     border-radius: 3px;
 }
 
@@ -69,6 +68,7 @@ nav a:hover{
     padding: 20px;
     width: 100vw;
     background: rgb(255, 255, 255);
+    color: #e78f0a;
 }
 
 .slogan {
@@ -89,8 +89,8 @@ nav a:hover{
 }
 
 .carousel-item img {
-    width: 500px;
-    height: 400px;
+    width: 550px;
+    height: 450px;
     box-shadow: 1px 5px 10px rgba(37, 37, 37, 0.336)
 }
 
@@ -105,6 +105,82 @@ nav a:hover{
 main {
     flex: 1 1 100vw;
     flex-direction: column;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 100px;
+    color: #e78f0a;
+}
+
+.produtos h1{
+    font-size: 22pt;
+    margin-left: 50px;
+}
+
+.produtos h2{
+    font-size: 16pt;
+    margin-left: 50px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 100px 20px 100px;
+    gap: 60px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    height: 400px;
+    box-shadow: 1px 5px 8px rgb(0, 0, 0, 0.3);
+    gap: 10px;
+    border: none;
+    background: #ffffff;
+    color: #e78f0a;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    max-height: 200px;
+}
+
+.card h1 {
+    font-size: 16pt;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card h2{
+    font-size: 14pt;
+    font-weight: 400;
+    margin: 0;
+    color: #b4b9b5;
+}
+
+.card a{
+    border: none;
+    background-color: #92E3A9;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.card a:hover{
+    transform: scale(1.1);
 }
 
 .serviços{
@@ -136,7 +212,7 @@ main {
 .serviços h2{
     font-size: 24px;
     font-weight: bolder;
-    color: #92E3A9;
+    color: #e78f0a;
     letter-spacing: 4px;
     padding: 10px;
     text-transform: uppercase;
@@ -145,7 +221,7 @@ main {
 .serviços p{
     font-size: 16px;
     padding: 10px;
-    color: #92E3A9;
+    color: #e78f0a;
     font-weight: 700;
 }
 
@@ -156,7 +232,7 @@ table{
 }
 
 table thead th{
-    background-color: #92E3A9;
+    background-color: #e78f0a;
     color: rgb(255, 255, 255);
     font-weight: 800;
     width: 40vw;
@@ -176,13 +252,13 @@ table, th, td{
 }
 
 table tr:nth-child(even){
-    background-color: #92E3A9;
+    background-color: #e78f0a;
     color: rgb(255, 255, 255);
 }
 
 table tr:nth-child(odd){
     background-color: #ffffff;
-    color: #92E3A9;
+    color: #e78f0a;
 }
 
 table tbody tr:hover {
@@ -200,7 +276,7 @@ aside{
     height: auto;
     justify-content: space-between;
     background: rgb(255, 255, 255);
-    color: #92E3A9;
+    color:#e78f0a;
     margin: 100px 0px 50px 0px;
 }
 
@@ -355,6 +431,17 @@ a, ul {
         align-items: center;
         justify-content: center;
         margin-top: 10px; 
+        margin: 0;
+    }
+
+    .serviços h2{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        letter-spacing: 0;
+    }
+
+    .serviços img{
         margin: 0;
     }
 
