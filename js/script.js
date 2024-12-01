@@ -24,3 +24,15 @@ fecharMenu.addEventListener('click', () =>{
     }, 200)
     
 })
+
+const produtos = document.getElementById('produtos')
+
+produtos.addEventListener('click', event =>{
+    event.preventDefault();
+
+    if (event.target.tagName === "A"){
+        const tituloClick = event.target.parentNode.children[1].innerText;
+        const url = `https://wa.me/558597422142?text=Ol%C3%A1,%20gostaria%20de%20verificar%20a%20disponibilidade%20da%20planta%20${encodeURIComponent(tituloClick)}.`;
+        window.open(url, "_blanck");
+    }
+});
