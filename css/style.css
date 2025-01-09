@@ -26,7 +26,7 @@ header, nav, section, main, aside, footer {
 header{
     flex: 1 1 100vw;
     height: 8vh;
-    background: #92E3A9;
+    background: white;
 }
 
 header img{
